@@ -39,7 +39,7 @@ class Graph
 		visited[s]=true;
 		queue.add(s);
 
-		while (queue.size() != 0)
+		while (queue.size()!= 0)
 		{
 			// Dequeue a vertex from queue and print it
 			s = queue.poll();
@@ -61,7 +61,7 @@ class Graph
 		}
 	}
 
-	// Driver method to
+	// Driver method to the code
 	public static void main(String args[])
 	{
 		Graph g = new Graph(5-1);
@@ -73,7 +73,7 @@ class Graph
 		g.addEdge(2, 3);
 		g.addEdge(3, 3);
 
-		System.out.println("Following is Breadth First Traversal "+
+		System.out.println("Following is Breadth First Traversal: "+
 						"(starting from vertex 2)");
 
 		g.BFS(4/2);
