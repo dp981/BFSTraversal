@@ -36,7 +36,7 @@ class Graph:
 			# Dequeue a vertex from
 			# queue and print it
 			s = queue.pop(0)
-			print (s, end = " ")
+			print (s, end = "  ")
 
 			# Get all adjacent vertices of the
 			# dequeued vertex s. If a adjacent
@@ -51,7 +51,7 @@ class Graph:
 
 # Create a graph given in
 # the above diagram
-g = Graph()
+g = Graph( )
 g.addEdge(0, 1)
 g.addEdge(0, 2)
 g.addEdge(1, 2)
@@ -60,7 +60,7 @@ g.addEdge(2, 3)
 g.addEdge(3, 3)
 
 print ("Following is Breadth First Traversal Algorithm"
-				" (starting from vertex 2)")
+				" (starting from vertex 2 only)")
 g.BFS(2)
 
 # This code is contributed by Neelam Yadav
