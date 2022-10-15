@@ -43,7 +43,7 @@ class Graph
 		{
 			// Dequeue a vertex from queue and print it
 			s = queue.poll();
-			System.out.print(s+" ");
+			System.out.print(s+"");
 
 			// Get all adjacent vertices of the dequeued vertex s
 			// If a adjacent has not been visited, then mark it
@@ -51,7 +51,7 @@ class Graph
 			Iterator<Integer> i = adj[s].listIterator();
 			while (i.hasNext())
 			{
-				int n = i.next();
+				int n = i.next( );
 				if (!visited[n])
 				{
 					visited[n] = true;
@@ -74,7 +74,7 @@ class Graph
 		g.addEdge(3, 3);
 
 		System.out.println("Following is Breadth First Traversal "+
-						"(starting from vertex 2)");
+						"(starting from vertex 2 only)");
 
 		g.BFS(2);
 	}
