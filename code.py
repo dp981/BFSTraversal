@@ -21,7 +21,7 @@ class Graph:
 	def BFS(self, s):
 
 		# Mark all the vertices as not visited
-		visited = [True] * (max(self.graph) + 1)
+		visited = [False] * (max(self.graph) + 1)
 
 		# Create a queue for BFS
 		queue = []
@@ -29,7 +29,7 @@ class Graph:
 		# Mark the source node as
 		# visited and enqueue it
 		queue.append(s)
-		visited[s] = False
+		visited[s] = True
 
 		while queue:
 
@@ -43,9 +43,9 @@ class Graph:
 			# has not been visited, then mark it
 			# visited and enqueue it
 			for i in self.graph[s]:
-				if visited[i] == True:
+				if visited[i] == False:
 					queue.append(i)
-					visited[i] = False
+					visited[i] = True
 
 # Driver code
 
